@@ -3,12 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Biglietto del treno</title>
+    <title>Document</title>
 </head>
 <body>
-    
 
-    <script text="text/javascript" src="script.js"></script>
+    <section id="form-section">
+
+        <div class="container">
+
+            <h1>ACQUISTA IL TUO BIGLIETTO</h1>
+            <input type="text" id="username" class="not" placeholder="Inserisci nome e cognome">
+            <input type="number" id="kilometers" class="not" placeholder="Inserisci il numero di chilometri">
+            <input type="text" id="age" class="not" placeholder="Inserisci la tua età">
+            <button id="send">GENERA</button>
+            <button id="reset">PULISCI</button>
+            <div class="discount">
+                <h3>Sconti disponibili:</h3>
+                <ul>
+                    <li>Anni 0-17: -20%;</li>
+                    <li>Anni over 65: -40%.</li>
+                </ul>    
+            </div>
+            
+            <div class="container">
+                <h2 id="prezzo-del-biglietto"></h2>
+                
+            </div>
+        </div>
+    </section>
+   
+
+    <script src="script.js"></script>
+    
 </body>
 </html>
