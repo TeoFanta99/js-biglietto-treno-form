@@ -29,12 +29,13 @@ sendButton.addEventListener("click",
 
     function () {
 
+        // in questa fase vado ad associare ogni variabile ai dati selezionati nello step 1
         userName = inputName.value;
         userKm = parseInt(inputKm.value);
         userAge = parseInt(inputAge.value);
 
         // debug tramite console
-        console.log("nome e cognome: ", userName);
+        console.log("nome: ", userName);
         console.log("n di km: ", userKm);
         console.log("età: ", userAge);
 
@@ -57,13 +58,14 @@ sendButton.addEventListener("click",
 );
 
 
+
+// STEP 4: BOTTONE CHE RIPULISCE I DATI - in questa fase lavoriamo sul bottone "pulisci"
 const container = document.querySelector(".container");
 
 resetButton.addEventListener("click", 
 
     function () {
-        // container.classList.add("none");
-        container.classList.add("none");
+        container.classList.remove("active");
     }
 
 )
