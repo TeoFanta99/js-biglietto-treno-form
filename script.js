@@ -1,19 +1,17 @@
-// STEP 1: SELEZIONE DEI DATI - in questa fase andiamo a individuare gli elementi HTML su cui vogliamo lavorare
+// STEP 1: SELEZIONE DEI DATI - in questa fase andiamo a individuare gli elementi HTML su cui vogliamo lavorare.
 
 // dati utente: nome e cognome, chilometraggio ed età 
 const inputName = document.getElementById("username");
 const inputKm = document.getElementById("kilometers");
 const inputAge = document.getElementById("age");
 
-//bottone che genera i dati
+//bottoni: generazione dati e reset dati
 const sendButton = document.getElementById("send");
-
-//bottone che ripulisce i dati
 const resetButton = document.getElementById("reset");
 
 
 
-// STEP 2: DICHIARAZIONE DELLE VARIABILI - in questa fase andiamo a dichiarare le variabili
+// STEP 2: DICHIARAZIONE DELLE VARIABILI - in questa fase andiamo a dichiarare quali saranno le variabili.
 
 let userName;
 let userKm;
@@ -23,7 +21,7 @@ let finalPrice;
 
 
 
-// STEP 3: BOTTONE CHE GENERA I DATI - in questa fase lavoriamo sul bottone "genera"
+// STEP 3: BOTTONE CHE GENERA I DATI - in questa fase lavoriamo sul bottone "genera".
 
 sendButton.addEventListener("click",
 
@@ -51,7 +49,7 @@ sendButton.addEventListener("click",
 
 
         // Output - risultato in pagina
-        document.getElementById("prezzo-del-biglietto").innerHTML = `Il costo del tuo biglietto è di: ${finalPrice} €`;
+        document.getElementById("prezzo-del-biglietto").innerHTML = `${userName}, il costo del tuo biglietto è di: ${finalPrice} €`;
 
     }
 
@@ -60,12 +58,3 @@ sendButton.addEventListener("click",
 
 
 // STEP 4: BOTTONE CHE RIPULISCE I DATI - in questa fase lavoriamo sul bottone "pulisci"
-const container = document.querySelector(".container");
-
-resetButton.addEventListener("click", 
-
-    function () {
-        container.classList.remove("active");
-    }
-
-)
